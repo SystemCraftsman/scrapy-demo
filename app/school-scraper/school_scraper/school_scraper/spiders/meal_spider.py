@@ -10,7 +10,7 @@ class MealSpider(scrapy.Spider):
     allowed_domains = ["systemcraftsman.github.io"]
     start_urls = ["https://systemcraftsman.github.io/scrapy-demo/website/index.html"]
     welcome_page_url = "https://systemcraftsman.github.io/scrapy-demo/website/welcome.html"
-    meal_page_url = "https://systemcraftsman.github.io/scrapy-demo/website/meal.html"
+    meal_page_url = "https://systemcraftsman.github.io/scrapy-demo/website/meal-list.html"
     date_str = datetime.today().strftime('%d.%m.%Y')
 
     def parse(self, response):
@@ -27,7 +27,7 @@ class MealSpider(scrapy.Spider):
 
     def parse_meal_page(self, response):
         if response.status == 200:
-            data = {"BREAKFAST": "", "LUNCH": "", "SALATA/Z.YAĞLI/TATLI": "", "MEYVE ZAMANI": ""}
+            data = {"BREAKFAST": "", "LUNCH": "", "SALAD": "", "FRUIT TIME": ""}
             week_no = datetime.now().isoweekday()
             rows = response.xpath('//*[@class="table table-condensed table-yemek-listesi"]//tr')
             key = ""
