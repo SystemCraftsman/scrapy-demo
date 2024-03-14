@@ -1,0 +1,7 @@
+venv
+__pycache__
+*.session
+.idea
+*.iml
+vscode
+.DS_Store

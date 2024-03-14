@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https:///giris -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<title>School - Info Center</title>
+	<link href="./files/css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="./files/biltrap.css">
+	<link rel="stylesheet" type="text/css" href="./files/font-awesome.min.css">
+    <!--<script src="//fast.eager.io/ODmmX9FCCn.js"></script>-->
+	<script type="text/javascript" async="" src="./files/analytics.js"></script><script type="text/javascript" async="" src="./files/js"></script><script src="./files/jquery.min.js"></script>
+  	<script src="./files/jquery.noty.packaged.min.js"></script>
+  	
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="./files/js(1)"></script>
+	</head>
+<body data-new-gr-c-s-check-loaded="14.1160.0" data-gr-ext-installed="" cz-shortcut-listen="true">
+    <form method="post">
+        <div class="container">
+            <div class="form-background" style="min-height: 30pc;">
+    
+                <div class="logo">
+   
+                </div>
+    
+                <div class="context">
+                    <span class="title">SCHOOL</span>
+                    <span class="description clearfix">Info Center</span>
+                </div>
+    
+                <div class="giris-input-zone">
+
+                        <div class="input-group input-group-lg margin-b10px">
+                            <span class="input-group-addon" id="sizing-addon1"><i class="fa2 fa2-user"></i></span>
+                            <input type="text" name="username" class="form-control password-area" aria-describedby="sizing-addon1" placeholder="USERNAME">
+                        </div>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="sizing-addon2"><i class="fa2 fa2-lock2"></i></span>
+                            <input type="password" name="password" class="form-control password-area" aria-describedby="sizing-addon2" placeholder="PASSWORD">
+                        </div>
+                        <div class="form-group padding-t15px">
+                            <input type="submit" value="LOG IN" class="btn btn-turange btn-lg">
+                        </div>
+                </div>
+    
+            </div>
+        </div>
+    </form>
+
+<script type="text/javascript" src="./files/jquery.js"></script>
+<script type="text/javascript" src="./files/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="./files/bootstrap.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Retrieve username and password input values
+            var username = document.querySelector('input[name="username"]').value;
+            var password = document.querySelector('input[name="password"]').value;
+
+            // Check if username and password match
+            if (username === "student" && password === "12345") {
+                document.querySelector("form").submit();
+            } else {
+                // Display error message
+                alert("Invalid username or password. Please try again.");
+            }
+        });
+    });
+</script>
+
+</body>

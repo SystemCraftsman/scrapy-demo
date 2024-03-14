@@ -1,0 +1,200 @@
+.bs_revir_h4{
+	background-color:#A0B2D3; 
+	padding:5px; 
+	color:#FFFFFF;
+}
+blockquote {
+  font-size: 12px;
+  border-left: 5px solid #ccc;
+  margin: 0 10px;
+  padding: 0.5em 10px;
+}
+.dropdown-wide{
+	min-width:800px;
+	margin:0 auto;
+	background-color:#133889;
+	border:0;
+	padding:0;
+}
+.make_circle{
+	border:3px solid #fff;
+	border-radius:50%;
+	width:50px;
+	height:50px;
+}
+.grey-bg-1x>a{
+	background-color:#dcdcdc!important;
+	border-bottom:4px solid #000!important
+}
+.grey-bg-1x>a:focus,.grey-bg-1x>a:hover{
+	border-bottom:4px solid #FFF!important;
+	background-color:#0d348b
+}
+.grey-bg-1x>a.open>a{
+	border-bottom:4px solid #e9951c!important;
+	background-color:#0d348b!important;color:#fff!important
+}
+.grey-bg-1x>a.open>a:hover{
+	color:#fff!important
+}
+#calendar .fc-toolbar .fc-left h2{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:20px;
+	color:#0057cb;
+	padding-top:15px;
+}
+
+
+
+.ders-listesi > div.tarih >span {
+	font-size: 16px;
+	color: #699dcd;
+    text-decoration: none;
+    position: relative;
+}
+
+.ders-listesi > div.tarih >span:after {
+    content: '';
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+
+    border-width: 0 0 1px;
+    border-style: solid;
+	color:#ececec;
+}
+
+.ders-listesi > ul {
+	margin-top: 15px;
+	padding-left: 12px;
+	list-style-type: none;
+}
+
+.ders-listesi > li {
+	position: relative;
+	
+}
+
+.ders-listesi > ul > li {
+	margin-left:5px;
+	font-size: 12px;
+	padding:3px 0;
+}
+.ders-listesi > ul > li:before {
+	content: " ";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: #F88300;
+	left: 0;
+	margin-top: 5px;
+}
+.disabled_text{
+	color:#d5d5d5;
+}
+.link-2 a:hover{
+	color:#fff;
+	;
+}
+.cbp_tmtimeline>li .cbp_tmicon.timeline-bg-extra1{
+	background-color:#dd77aa;color:#fff
+}
+.cbp_tmtimeline>li .cbp_tmicon.timeline-bg-extra2{
+	background-color:#660066;color:#fff
+}
+.cbp_tmtimeline>li .cbp_tmicon.timeline-bg-extra3{
+	background-color:#553366;color:#fff
+}
+.cbp_tmtimeline>li .cbp_tmicon.timeline-bg-extra4{
+	background-color:#113388;color:#fff
+}
+.cbp_tmtimeline>li .cbp_tmicon.timeline-bg-extra5{
+	background-color:#7799dd;color:#fff
+}
+.cbp_tmtimeline>li .cbp_tmicon.timeline-bg-extra6{
+	background-color:#99cccc;color:#fff
+}
+.cbp_tmtimeline>li .cbp_tmicon.timeline-bg-extra7{
+	background-color:#aa3311;color:#fff
+}
+.cbp_tmtimeline>li .cbp_tmicon.timeline-bg-extra8{
+	background-color:#ee6655;color:#fff
+}
+.nf-blue-bg {
+	background-color: #0D348B;
+	border-bottom: 4px solid #0B2A6F;
+	position: relative;
+	color: #FFF;
+	height: 50px;
+	width: 65px;
+	font-size: 11px;
+	text-align: center;
+	float:left;
+	margin-right:10px;
+}
+.nf-blue-bg .datebyday {
+	font-size: 28px;
+	font-weight: bolder;
+	color: #1AB7F1;
+	line-height: 1;
+	margin-left: 4px;
+}
+.nf-blue-bg .datebymonth {
+	font-size: 14px;
+	color: #F19E1A;
+	text-align: center;
+	font-weight:bold;
+}
+.cbp_tmtimeline > li .cbp_tmlabel_update{
+	background-color:#fcf7ee !important;
+}
+.cbp_tmtimeline > li .cbp_tmlabel_update::after{
+	border-color: transparent #fcf7ee transparent transparent !important;
+}
+.cbp_tmtimeline > li .cbp_tmlabel_delete{
+	background-color:#f4f4f4 !important;
+}
+.cbp_tmtimeline > li .cbp_tmlabel_delete::after{
+	border-color: transparent #f4f4f4 transparent transparent !important;
+}
+.rehberlik > li{
+	padding-top:20px;
+}
+.light_purple{
+	background-color:#e6d5e6;
+}
+.light_kirmizi{
+	background-color:#f7dfd9;
+}
+.light_mavi{
+	background-color:#d4ecf6;
+}
+.light_sari{
+	background-color:#f6f0d4;
+}
+.light_yesil{
+	background-color:#e5f1d4;
+}
+.table-yemek-listesi > tbody > tr > td {
+	border-right: 2px solid #fff !important;
+	border-top: none !important;
+}
+.table-yemek-listesi > tbody > tr.subtitle > td {
+	border-bottom: none !important;
+	border-top: 2px solid #fff !important;
+}
+#map {
+	display: block;
+	width: 100%;
+	height: 350px;
+	margin: 0px auto;
+	/*box-shadow: 0px 5px 20px #CCC;*/
+}
+.disable_chart_link a{
+	font-size: 0!important;
+}
+.align_center{
+	text-align:center;
+}
