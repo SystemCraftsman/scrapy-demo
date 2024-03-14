@@ -11,7 +11,7 @@ class MealSpider(scrapy.Spider):
     start_urls = ["https://systemcraftsman.github.io/scrapy-demo/website/index.html"]
     welcome_page_url = "https://systemcraftsman.github.io/scrapy-demo/website/welcome.html"
     meal_page_url = "https://systemcraftsman.github.io/scrapy-demo/website/meal-list.html"
-    date_str = datetime.today().strftime('%d.%m.%Y')
+    date_str = "12.03.2024"
 
     def parse(self, response):
         formdata = {'username': 'student',
@@ -27,8 +27,8 @@ class MealSpider(scrapy.Spider):
 
     def parse_meal_page(self, response):
         if response.status == 200:
-            data = {"BREAKFAST": "", "LUNCH": "", "SALAD": "", "FRUIT TIME": ""}
-            week_no = datetime.now().isoweekday()
+            data = {"BREAKFAST": "", "LUNCH": "", "SALAD/DESSERT": "", "FRUIT TIME": ""}
+            week_no = datetime.strptime(self.date_str, '%d.%m.%Y').isoweekday()
             rows = response.xpath('//*[@class="table table-condensed table-yemek-listesi"]//tr')
             key = ""
             try:

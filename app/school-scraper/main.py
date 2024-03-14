@@ -21,7 +21,7 @@ def prepare_message(title, data_dict):
     if len(data_dict.items()) == 0:
         return None
 
-    message = f"===={title} ({date_str})====\n----------------\n"
+    message = f"===={title}====\n----------------\n"
     for key, value in data_dict.items():
         message = message + f"==={key}===\n{value}\n----------------\n"
 
