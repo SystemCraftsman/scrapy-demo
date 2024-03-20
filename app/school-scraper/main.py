@@ -1,6 +1,5 @@
 #!/Users/mabulgu/github-repos/mabulgu/bilfen-reminder/venv/bin/python
 import sys
-from datetime import datetime
 
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
@@ -9,7 +8,6 @@ from school_scraper.school_scraper.spiders.homework_spider import HomeworkSpider
 from school_scraper.school_scraper.spiders.meal_spider import MealSpider
 
 results = []
-date_str = datetime.today().strftime('%d.%m.%Y')
 
 
 class ResultsPipeline(object):
@@ -17,7 +15,7 @@ class ResultsPipeline(object):
         results.append(item)
 
 
-def prepare_message(title, data_dict):
+def _prepare_message(title, data_dict):
     if len(data_dict.items()) == 0:
         return None
 
@@ -38,11 +36,11 @@ def main(args=None):
     if args[1] == "homework":
         process.crawl(HomeworkSpider)
         process.start()
-        print(prepare_message("HOMEWORK ASSIGNMENTS", results[0]))
+        print(_prepare_message("HOMEWORK ASSIGNMENTS", results[0]))
     elif args[1] == "meal":
         process.crawl(MealSpider)
         process.start()
-        print(prepare_message("MEAL LIST", results[0]))
+        print(_prepare_message("MEAL LIST", results[0]))
 
 
 if __name__ == "__main__":

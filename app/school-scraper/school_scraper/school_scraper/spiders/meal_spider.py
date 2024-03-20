@@ -11,7 +11,7 @@ class MealSpider(scrapy.Spider):
     start_urls = ["https://systemcraftsman.github.io/scrapy-demo/website/index.html"]
     welcome_page_url = "https://systemcraftsman.github.io/scrapy-demo/website/welcome.html"
     meal_page_url = "https://systemcraftsman.github.io/scrapy-demo/website/meal-list.html"
-    date_str = "12.03.2024"
+    date_str = "13.03.2024"
 
     def parse(self, response):
         formdata = {'username': 'student',

@@ -1,7 +1,6 @@
 import scrapy
 
 from scrapy import FormRequest, Request
-from datetime import datetime
 
 
 class HomeworkSpider(scrapy.Spider):
